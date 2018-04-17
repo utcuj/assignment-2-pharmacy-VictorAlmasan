@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="630.0" maxWidth="850.0" minHeight="630.0" minWidth="850.0" prefHeight="630.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLayoutController">
+   <children>
+      <TitledPane animated="false" layoutX="7.0" layoutY="7.0" maxHeight="260.0" maxWidth="835.0" minHeight="260.0" minWidth="835.0" prefHeight="260.0" prefWidth="835.0" text="Operations on User">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="197.0" prefWidth="691.0">
+               <children>
+                  <TableView fx:id="usersTable" layoutX="5.0" layoutY="3.0" prefHeight="202.0" prefWidth="199.0">
+                    <columns>
+                      <TableColumn fx:id="usernameColumn" prefWidth="100.0" text="Username" />
+                      <TableColumn fx:id="passwordColumn" prefWidth="98.0" text="Password" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="83.0" layoutY="207.0" mnemonicParsing="false" onAction="#loadUsers" text="Load" />
+                  <TitledPane animated="false" layoutX="210.0" layoutY="3.0" prefHeight="202.0" prefWidth="202.0" text="User Information">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="22.0" prefHeight="17.0" prefWidth="77.0" text="User Id:" />
+                              <Label layoutX="14.0" layoutY="53.0" prefHeight="17.0" prefWidth="77.0" text="Username:" />
+                              <Label layoutX="14.0" layoutY="88.0" prefHeight="17.0" prefWidth="77.0" text="Password:" />
+                              <Label layoutX="14.0" layoutY="119.0" prefHeight="17.0" prefWidth="77.0" text="Type:" />
+                              <Label fx:id="userIdLabel" layoutX="100.0" layoutY="22.0" prefHeight="17.0" prefWidth="77.0" text="Label" />
+                              <Label fx:id="usernameLabel" layoutX="100.0" layoutY="53.0" prefHeight="17.0" prefWidth="77.0" text="Label" />
+                              <Label fx:id="passwordLabel" layoutX="100.0" layoutY="88.0" prefHeight="17.0" prefWidth="77.0" text="Label" />
+                              <Label fx:id="typeLabel" layoutX="100.0" layoutY="119.0" prefHeight="17.0" prefWidth="77.0" text="Label" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="419.0" layoutY="3.0" prefHeight="202.0" prefWidth="202.0" text="User Edit">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="24.0" prefHeight="17.0" prefWidth="72.0" text="User Id:" />
+                              <Label layoutX="14.0" layoutY="55.0" prefHeight="17.0" prefWidth="73.0" text="Username:" />
+                              <Label layoutX="14.0" layoutY="88.0" prefHeight="17.0" prefWidth="74.0" text="Password:" />
+                              <Label layoutX="14.0" layoutY="119.0" prefHeight="17.0" prefWidth="75.0" text="Type:" />
+                              <Label fx:id="userIdEditLabel" layoutX="100.0" layoutY="24.0" prefHeight="17.0" prefWidth="88.0" text="Label" />
+                              <Label fx:id="typeEditLabel" layoutX="100.0" layoutY="119.0" prefHeight="17.0" prefWidth="88.0" text="Label" />
+                              <TextField fx:id="usernameEditTextField" layoutX="96.0" layoutY="51.0" prefHeight="25.0" prefWidth="97.0" />
+                              <TextField fx:id="passwordEditTextField" layoutX="96.0" layoutY="84.0" prefHeight="25.0" prefWidth="97.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Button layoutX="506.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleEditUser" text="Edit" />
+                  <TitledPane animated="false" layoutX="628.0" layoutY="3.0" maxHeight="202.0" minHeight="150.0" prefHeight="202.0" prefWidth="202.0" text="User Add">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="23.0" layoutY="22.0" prefHeight="17.0" prefWidth="64.0" text="Username:" />
+                              <Label layoutX="23.0" layoutY="60.0" prefHeight="17.0" prefWidth="64.0" text="Password:" />
+                              <Label layoutX="23.0" layoutY="94.0" prefHeight="17.0" prefWidth="64.0" text="Type:" />
+                              <Label alignment="CENTER" layoutX="100.0" layoutY="93.0" prefHeight="20.0" prefWidth="88.0" text="regularUser">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernameCreateTextField" layoutX="93.0" layoutY="18.0" prefHeight="25.0" prefWidth="101.0" />
+                              <TextField fx:id="passwordCreateTextField" layoutX="93.0" layoutY="56.0" prefHeight="25.0" prefWidth="101.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Button layoutX="710.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAddUser" text="Add" />
+                  <Button layoutX="285.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="7.0" layoutY="277.0" maxHeight="265.0" maxWidth="835.0" minHeight="265.0" minWidth="835.0" prefHeight="265.0" prefWidth="835.0" text="Operations on Medication">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="medicationsTable" layoutX="4.0" layoutY="3.0" maxHeight="202.0" maxWidth="199.0" minHeight="202.0" minWidth="199.0" prefHeight="202.0" prefWidth="199.0">
+                    <columns>
+                      <TableColumn fx:id="medicationNameColumn" prefWidth="95.0" text="Name" />
+                      <TableColumn fx:id="medicationManufacturerColumn" prefWidth="103.0" text="Manufacturer" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="83.0" layoutY="209.0" mnemonicParsing="false" onAction="#loadMedications" text="Load" />
+                  <TitledPane animated="false" layoutX="210.0" layoutY="3.0" prefHeight="203.0" prefWidth="202.0" text="Medication Information">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="13.0" prefHeight="17.0" prefWidth="79.0" text="Medication Id:" />
+                              <Label layoutX="14.0" layoutY="37.0" prefHeight="17.0" prefWidth="79.0" text="Name:" />
+                              <Label layoutX="14.0" layoutY="64.0" prefHeight="17.0" prefWidth="79.0" text="Ingredients:" />
+                              <Label layoutX="14.0" layoutY="91.0" prefHeight="17.0" prefWidth="79.0" text="Manufacturer:" />
+                              <Label layoutX="14.0" layoutY="117.0" prefHeight="17.0" prefWidth="79.0" text="Quantity:" />
+                              <Label layoutX="14.0" layoutY="145.0" prefHeight="17.0" prefWidth="79.0" text="Price:" />
+                              <Label fx:id="medicationIdLabel" layoutX="99.0" layoutY="13.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                              <Label fx:id="medicationNameLabel" layoutX="99.0" layoutY="37.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                              <Label fx:id="ingredientsLabel" layoutX="99.0" layoutY="64.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                              <Label fx:id="manufacturerLabel" layoutX="99.0" layoutY="91.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                              <Label fx:id="quantityLabel" layoutX="99.0" layoutY="117.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                              <Label fx:id="priceLabel" layoutX="99.0" layoutY="145.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Button layoutX="285.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleDeleteMedication" text="Delete" />
+                  <TitledPane animated="false" layoutX="419.0" layoutY="3.0" prefHeight="204.0" prefWidth="202.0" text="Medication Edit">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="9.0" prefHeight="17.0" prefWidth="79.0" text="Medication Id:" />
+                              <Label layoutX="14.0" layoutY="34.0" prefHeight="17.0" prefWidth="79.0" text="Name:" />
+                              <Label layoutX="14.0" layoutY="63.0" prefHeight="17.0" prefWidth="79.0" text="Ingredients:" />
+                              <Label layoutX="14.0" layoutY="92.0" prefHeight="17.0" prefWidth="79.0" text="Manufacturer:" />
+                              <Label layoutX="14.0" layoutY="121.0" prefHeight="17.0" prefWidth="79.0" text="Quantity:" />
+                              <Label layoutX="14.0" layoutY="150.0" prefHeight="17.0" prefWidth="79.0" text="Price:" />
+                              <Label fx:id="medicationIdEditLabel" layoutX="116.0" layoutY="9.0" prefHeight="17.0" prefWidth="76.0" text="Label" />
+                              <TextField fx:id="medicationNameEditTextField" layoutX="112.0" layoutY="30.0" prefHeight="25.0" prefWidth="82.0" />
+                              <TextField fx:id="ingredientsEditTextField" layoutX="112.0" layoutY="59.0" prefHeight="25.0" prefWidth="82.0" />
+                              <TextField fx:id="manufacturerEditTextField" layoutX="112.0" layoutY="88.0" prefHeight="25.0" prefWidth="82.0" />
+                              <TextField fx:id="quantityEditTextField" layoutX="112.0" layoutY="117.0" prefHeight="25.0" prefWidth="82.0" />
+                              <TextField fx:id="priceEditTextField" layoutX="112.0" layoutY="146.0" prefHeight="25.0" prefWidth="82.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Button layoutX="502.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleEditMedication" text="Edit" />
+                  <TitledPane animated="false" layoutX="628.0" layoutY="3.0" prefHeight="204.0" prefWidth="202.0" text="Medication Add">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="21.0" layoutY="17.0" prefHeight="17.0" prefWidth="79.0" text="Name:" />
+                              <Label layoutX="21.0" layoutY="47.0" prefHeight="17.0" prefWidth="79.0" text="Ingredients:" />
+                              <Label layoutX="21.0" layoutY="78.0" prefHeight="17.0" prefWidth="79.0" text="Manufacturer:" />
+                              <Label layoutX="21.0" layoutY="110.0" prefHeight="17.0" prefWidth="79.0" text="Quantity:" />
+                              <Label layoutX="21.0" layoutY="142.0" prefHeight="17.0" prefWidth="79.0" text="Price:" />
+                              <TextField fx:id="medicationNameCreateTextField" layoutX="100.0" layoutY="13.0" prefHeight="25.0" prefWidth="95.0" />
+                              <TextField fx:id="ingredientsCreateTextField" layoutX="100.0" layoutY="43.0" prefHeight="25.0" prefWidth="95.0" />
+                              <TextField fx:id="manufacturerCreateTextField" layoutX="100.0" layoutY="74.0" prefHeight="25.0" prefWidth="95.0" />
+                              <TextField fx:id="quantityCreateTextField" layoutX="100.0" layoutY="106.0" prefHeight="25.0" prefWidth="95.0" />
+                              <TextField fx:id="priceCreateTextField" layoutX="100.0" layoutY="138.0" prefHeight="25.0" prefWidth="95.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Button layoutX="711.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleAddMedication" text="Add" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="268.0" layoutY="550.0" prefHeight="66.0" prefWidth="262.0" text="Reports">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="255.0">
+               <children>
+                  <ComboBox fx:id="fileFormatComboBox" layoutX="82.0" layoutY="8.0" prefHeight="25.0" prefWidth="67.0" />
+                  <Label layoutX="13.0" layoutY="12.0" prefHeight="17.0" prefWidth="57.0" text="Format:" />
+                  <Button layoutX="179.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleGenerateButton" text="Generate" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<medications>
+  <medication id="1523997519098">
+    <name>Apa oxigenata</name>
+    <ingredients>H2O2 H2O </ingredients>
+    <manufacturer>Pfizer</manufacturer>
+    <quantity>0</quantity>
+    <price>5</price>
+  </medication>
+</medications>

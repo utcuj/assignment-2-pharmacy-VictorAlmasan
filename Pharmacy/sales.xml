@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sales>
+	
+<sale id="1523782290148">
+    <name>Paracetamol</name>
+    <manufacturer>Sanofi</manufacturer>
+    <quantity>2</quantity>
+    <totalPrice>4</totalPrice>
+  </sale>
+<sale id="1523782412119">
+    <name>Apa oxigenata</name>
+    <manufacturer>Pfizer</manufacturer>
+    <quantity>1</quantity>
+    <totalPrice>5</totalPrice>
+  </sale>
+<sale id="1523793237477">
+    <name>Apa oxigenata</name>
+    <manufacturer>Pfizer</manufacturer>
+    <quantity>99</quantity>
+    <totalPrice>495</totalPrice>
+  </sale>
+<sale id="1523793430724">
+    <name>Apa oxigenata</name>
+    <manufacturer>Pfizer</manufacturer>
+    <quantity>1</quantity>
+    <totalPrice>5</totalPrice>
+  </sale>
+<sale id="1523793675364">
+    <name>Plasturi</name>
+    <manufacturer>Antib. Iasi</manufacturer>
+    <quantity>2</quantity>
+    <totalPrice>36</totalPrice>
+  </sale>
+<sale id="1523793963355">
+    <name>Sampon DS</name>
+    <manufacturer>Ducray</manufacturer>
+    <quantity>2</quantity>
+    <totalPrice>134</totalPrice>
+  </sale>
+<sale id="1523997133347">
+    <name>Plasturi</name>
+    <manufacturer>Antib. Iasi</manufacturer>
+    <quantity>3</quantity>
+    <totalPrice>54</totalPrice>
+  </sale>
+<sale id="1523997333823">
+    <name>Paracetamol</name>
+    <manufacturer>Sanofi</manufacturer>
+    <quantity>3</quantity>
+    <totalPrice>6</totalPrice>
+  </sale>
+<sale id="1523997338084">
+    <name>Sampon DS</name>
+    <manufacturer>Ducray</manufacturer>
+    <quantity>4</quantity>
+    <totalPrice>268</totalPrice>
+  </sale>
+<sale id="1523997566540">
+    <name>Paracetamol</name>
+    <manufacturer>Sanofi</manufacturer>
+    <quantity>11</quantity>
+    <totalPrice>22</totalPrice>
+  </sale>
+</sales>

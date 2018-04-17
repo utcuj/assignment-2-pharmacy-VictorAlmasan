@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+	<user id="1">
+		<username>admin</username>
+		<password>admin2018</password>
+		<type>administrator</type>
+	</user>
+	<user id="2">
+		<username>user</username>
+		<password>user2018</password>
+		<type>regularUser</type>
+	</user>
+	<user id="3">
+		<username>user2</username>
+		<password>user2</password>
+		<type>regularUser</type>
+	</user>
+	<user id="4">
+		<username>user4</username>
+		<password>user4</password>
+		<type>regularUser</type>
+	</user>
+	<user id="5">
+		<username>user5</username>
+		<password>user55</password>
+		<type>regularUser</type>
+	</user>
+<user id="1523701422572">
+    <username>user65</username>
+    <password>user6</password>
+    <type>regularUser</type>
+  </user>
+<user id="1523701519011">
+    <username>user7</username>
+    <password>user7</password>
+    <type>regularUser</type>
+  </user>
+
+
+<user id="1523793857407">
+    <username>user8</username>
+    <password>user887</password>
+    <type>regularUser</type>
+  </user>
+<user id="1523997029677">
+    <username>user11</username>
+    <password>user11</password>
+    <type>regularUser</type>
+  </user>
+<user id="1523997480751">
+    <username>user10</username>
+    <password>user10</password>
+    <type>regularUser</type>
+  </user>
+</users>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<medications>
+	<medication id="1">
+		<name>Apa oxigenata</name>
+		<ingredients>H2O2 H2O </ingredients>
+		<manufacturer>Pfizer</manufacturer>
+		<quantity>0</quantity>
+		<price>5</price>
+	</medication>
+<medication id="1523714010263">
+    <name>Plasturi</name>
+    <ingredients>Acid Salicilic</ingredients>
+    <manufacturer>Antib. Iasi</manufacturer>
+    <quantity>19</quantity>
+    <price>18</price>
+  </medication>
+
+
+<medication id="1523782227776">
+    <name>Paracetamol</name>
+    <ingredients>Paracetamol</ingredients>
+    <manufacturer>Sanofi</manufacturer>
+    <quantity>484</quantity>
+    <price>2</price>
+  </medication>
+<medication id="1523793930819">
+    <name>Sampon DS</name>
+    <ingredients>Plante Med.</ingredients>
+    <manufacturer>Ducray</manufacturer>
+    <quantity>55</quantity>
+    <price>67</price>
+  </medication>
+
+</medications>
